@@ -6,7 +6,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ~/Photoblog:/var/www/html
+      - /Photoblog:/var/www/html
   db:
     image: mysql:5
     ports:
@@ -17,4 +17,4 @@ services:
       - MYSQL_PASSWORD=pentesterlab
       - MYSQL_DATABASE=photoblog
     volumes:
-      - ~/Photoblog/photoblog.sql:/docker-entrypoint-initdb.d/photoblog.sql
+      - /Photoblog/photoblog.sql:/docker-entrypoint-initdb.d/photoblog.sql
