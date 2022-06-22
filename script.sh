@@ -1,4 +1,5 @@
 #!/bin/sh
+rm script.sh
 apt update -y
 apt install -y docker docker-compose git wget
 git clone https://github.com/7ric/Photoblog.git /Photoblog
