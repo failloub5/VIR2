@@ -20,3 +20,6 @@ services:
       - /Photoblog/photoblog.sql:/docker-entrypoint-initdb.d/photoblog.sql
   kali:
     image: kalilinux/kali-rolling
+    tty: true
+    stdin_open: true
+    entrypoint: /bin/bash -c 'apt update &>/dev/null; apt install -y sqlmap lynx w3m links &>/dev/null; exec bash'
