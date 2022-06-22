@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #rm script.sh
 apt update &>/dev/null
 apt install -y docker docker-compose git wget lolcat &>/dev/null
