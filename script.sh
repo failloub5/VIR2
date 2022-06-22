@@ -7,6 +7,6 @@ wget -nc https://raw.githubusercontent.com/failloub5/VIR2/main/docker-compose.ya
 docker-compose up -d
 docker-compose exec -T websrv docker-php-ext-install mysql
 docker-compose exec -T websrv /etc/init.d/apache2 reload
-
+exec docker-compose exec --tty --interactive kalilinux/kali-rolling /bin/bash
 # docker build -t dockerfile .
 # docker run -it dockerfile bash
