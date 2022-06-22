@@ -10,4 +10,4 @@ docker-compose up -d --quiet-pull websrv db
 echo "le super" | /usr/games/lolcat
 docker-compose exec -T websrv docker-php-ext-install mysql &>/dev/null
 docker-compose exec -T websrv /etc/init.d/apache2 reload &>/dev/null
-exec docker-compose run kali
+exec docker-compose run --quiet-pull kali
