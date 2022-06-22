@@ -1,1 +1,1 @@
-wget -qO- https://raw.githubusercontent.com/failloub5/VIR2/main/script.sh | sudo sh
+wget -q https://raw.githubusercontent.com/failloub5/VIR2/main/script.sh && chmod +x script.sh && sudo ./script.sh
