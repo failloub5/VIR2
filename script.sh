@@ -9,5 +9,4 @@ docker-compose up -d
 docker-compose exec websrv docker-php-ext-install mysql
 docker-compose exec websrv /etc/init.d/apache2 reload
 exec docker run --tty --interactive kalilinux/kali-rolling /bin/bash -c 'apt update; apt install -y sqlmap lynx w3m links; exec bash'
-# docker build -t dockerfile .
-# docker run -it dockerfile bash
+
