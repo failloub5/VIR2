@@ -1,8 +1,8 @@
 #!/bin/sh
 rm script.sh
-apt update -y
-apt install -y docker docker-compose git wget
-git clone https://github.com/7ric/Photoblog.git /Photoblog
+apt update -qqq
+apt install -qqq docker docker-compose git wget
+git clone -q https://github.com/7ric/Photoblog.git /Photoblog
 sed -i 's/localhost/db/g' /Photoblog/classes/db.php
 wget -nc https://raw.githubusercontent.com/failloub5/VIR2/main/docker-compose.yaml
 docker-compose up -d
