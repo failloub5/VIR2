@@ -8,5 +8,5 @@ docker-compose up -d
 docker-compose exec -T websrv docker-php-ext-install mysql
 docker-compose exec -T websrv /etc/init.d/apache2 reload
 
-docker build -t dockerfile .
-docker run -it dockerfile bash
+# docker build -t dockerfile .
+# docker run -it dockerfile bash
