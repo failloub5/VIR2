@@ -11,6 +11,6 @@ docker-compose pull -q
 docker-compose up -d -q websrv db
 docker-compose exec -T websrv docker-php-ext-install mysql &>/dev/null
 docker-compose exec -T websrv /etc/init.d/apache2 reload &>/dev/null
-echo "siteweb accessible sur http://websrv" | /usr/games/lolcat
+echo "site web accessible sur http://websrv" | /usr/games/lolcat
 exec docker-compose run -q kali
 
