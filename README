@@ -1,6 +1,6 @@
-Prérequis :
+###Prérequis :
 Le paquet sudo doit être installé et configuré
-Usage :
+###Usage :
 Commande à passer pour déployer le laboratoire sur une machine Debian :
 
 wget -q https://raw.githubusercontent.com/failloub5/VIR2/main/script.sh && chmod +x script.sh && sudo ./script.sh
