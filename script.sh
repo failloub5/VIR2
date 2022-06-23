@@ -9,7 +9,7 @@ echo "Installation..."
 #installation des paquets
 apt update &>/dev/null
 apt install -y docker docker-compose git wget lolcat &>/dev/null 
-echo "Preparation du Pentestlab..." | /usr/games/lolcat
+echo "Preparation du Pentesterlab..." | /usr/games/lolcat
 #récupération du site depuis github et configuration
 git clone -q https://github.com/7ric/Photoblog.git /Photoblog
 sed -i 's/localhost/db/g' /Photoblog/classes/db.php
