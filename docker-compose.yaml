@@ -22,4 +22,4 @@ services:
     image: kalilinux/kali-rolling
     tty: true
     stdin_open: true
-    entrypoint: /bin/bash -c 'apt update &>/dev/null; apt install -y sqlmap lynx w3m links &>/dev/null; exec bash'
+    entrypoint: /bin/bash -c 'apt update &>/dev/null; apt install -y sqlmap nmap netdiscover lynx w3m links &>/dev/null; exec bash'
